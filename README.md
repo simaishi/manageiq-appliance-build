@@ -50,6 +50,13 @@ Below are instructions on installing and configuring a virtual machine to genera
     dnf config-manager --set-enabled PowerTools
     ```
 
+  * Add ManageIQ Build repo
+    ```
+    pushd /etc/yum.repos.d/
+      wget https://copr.fedorainfracloud.org/coprs/manageiq/ManageIQ-Build/repo/epel-8/manageiq-ManageIQ-Build-epel-8.repo
+    popd
+    ```
+
 ## Setup the /build directory
 
   * Create the directories:
