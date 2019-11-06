@@ -5,13 +5,12 @@ repo --name=extras  --baseurl=http://mirror.centos.org/centos/7/extras/x86_64/
 repo --name=epel    --baseurl=http://dl.fedoraproject.org/pub/epel/7/x86_64/
 
 # repos to install packages not found in the os
-repo --name=nodesource --baseurl=https://rpm.nodesource.com/pub_10.x/el/7/x86_64/
+repo --install --name=nodesource --baseurl=https://rpm.nodesource.com/pub_10.x/el/7/x86_64/
 
 <% if @target == "gce" %>
-repo --name=google-cloud-compute --baseurl=https://packages.cloud.google.com/yum/repos/google-cloud-compute-el7-x86_64/
+repo --install --name=google-cloud-compute --baseurl=https://packages.cloud.google.com/yum/repos/google-cloud-compute-el7-x86_64/
 <% end %>
 
 # Please also add to "post install repos" post/repos partial
-repo --name=ansible-runner --baseurl=https://releases.ansible.com/ansible-runner/rpm/epel-7-x86_64/
-repo --name=manageiq-ManageIQ-Master --baseurl=https://copr-be.cloud.fedoraproject.org/results/manageiq/ManageIQ-Master/epel-7-x86_64/
-repo --name=postmodern-ruby-install --baseurl=https://copr-be.cloud.fedoraproject.org/results/postmodern/ruby-install/fedora-25-$basearch/
+repo --install --name=ansible-runner --baseurl=https://releases.ansible.com/ansible-runner/rpm/epel-7-x86_64/
+repo --install --name=manageiq-ManageIQ-Master --baseurl=https://copr-be.cloud.fedoraproject.org/results/manageiq/ManageIQ-Master/epel-7-x86_64/
