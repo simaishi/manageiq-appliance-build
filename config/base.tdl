@@ -5,8 +5,8 @@
     <name>CentOS-7</name>
     <version>4</version>
     <arch>x86_64</arch>
-    <install type="iso">
-      <iso>file:///build/isos/CentOS-8.1.1911-x86_64-boot.iso</iso>
+    <install type="url">
+      <url>http://mirror.centos.org/centos/8/BaseOS/x86_64/os</url>
     </install>
   </os>
   <description>CentOS TDL meant to be used with custom kickstart for manageiq.</description>
