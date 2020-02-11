@@ -6,7 +6,7 @@
     <version>4</version>
     <arch>x86_64</arch>
     <install type="url">
-      <url>http://mirror.centos.org/centos/8/BaseOS/x86_64/os</url>
+      <url>http://file.cloudforms.lab.eng.rdu2.redhat.com/builds/manageiq/centos8_install/</url>
     </install>
   </os>
   <description>CentOS TDL meant to be used with custom kickstart for manageiq.</description>
